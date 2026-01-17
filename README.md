@@ -11,17 +11,21 @@ We present six distinct genome assemblies, evidence for whole-genome triploidiza
 ### `Genome_assembly/`  
 Contains scripts used in the assembly of *Salicornia* genomes.
 
+### `Gene_prediction/`  
+Contains scripts for gene prediction of *Salicornia* genomes.  
+Reference([BRAKER GitHub](https://github.com/Gaius-Augustus/BRAKER)).
+
 ### `Whole_genome_triploidization_and_divergence_event_analysis/`  
 Includes all scripts for synonymous substitution rate (Ks) analysis to identify whole-genome triploidization and species divergence events.  
 Ks values are calculated using the open-source WGDI pipeline ([WGDI GitHub](https://github.com/SunPengChuan/WGDI)).  
 Instructions for visualization.
 
-### `intra_family_transcriptomic_comparisons/`  
-Provides a complete pipeline for cross-species transcriptomic analysis, including:
-- Raw transcriptome quantification data (FPKM)
-- Differential gene expression results using DESeq2
-- Homologous gene clustering results from OrthoFinder
-- Downstream analysis scripts and figure generation code
+### `Gene_family_analysis/`  
+Contains scripts used for gene family analysis of *Salicornia* genomes.
+
+### `Structure_varation/`  
+Contains scripts used to analyze structural variation in *Salicornia* genomes.
+
 
 ---
 
