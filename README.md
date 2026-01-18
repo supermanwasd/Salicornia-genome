@@ -6,34 +6,57 @@ We present six distinct genome assemblies, evidence for whole-genome triploidiza
 
 ---
 
+## Quick start
+
+* The repository `requirements.txt` (root) lists the Python packages used for notebooks and downstream plotting.
+
+---
+
+## How this README is organized
+
+This README is written in the style of a Methods section for a genome paper. For each major analysis step you will find:
+
+1. A short methodological description (what we did and why).
+2. Reproducible commands or notebook entry points (how to run it).
+3. Where the code lives in this repository (folder and file patterns).
+
+> **Note:** this repository primarily stores analysis code (Jupyter notebooks, shell wrappers and small helper scripts). Raw sequencing data and large intermediate files are **not** included here — see the manuscript/SRA/ENA accession statements for raw data links.
+
+---
+
+
 ## 📁 Repository Structure
 
-### `Genome_assembly/`  
+### `01_Genome_assembly/`  
 Contains scripts used in the assembly of *Salicornia* genomes.
 
-### `Gene_prediction/`  
+### `02_Gene_prediction/`  
 Contains scripts for gene prediction of *Salicornia* genomes.  
 Reference([BRAKER GitHub](https://github.com/Gaius-Augustus/BRAKER)).
 
-### `Whole_genome_triploidization_and_divergence_event_analysis/`  
+### `03_Genome_assembly_quality_assessment/`  
+BUSCO, QUAST, k-mer spectra, and other assembly QC analyses.  
+
+### `04_Whole_genome_triploidization_and_divergence_event_analysis/`  
 Includes all scripts for synonymous substitution rate (Ks) analysis to identify whole-genome triploidization and species divergence events.  
 Ks values are calculated using the open-source WGDI pipeline ([WGDI GitHub](https://github.com/SunPengChuan/WGDI)).  
 Instructions for visualization.
 
-### `Gene_family_analysis/`  
+### `05_Phylogenetic_tree/`  
+ortholog identification, alignments and tree-building notebooks/scripts used for species tree inference.
+
+### `06_Gene_family_analysis/`  
 Contains scripts used for gene family analysis of *Salicornia* genomes.
 
-### `Structure_varation/`  
+### `07_Structure_varation/`  
 Contains scripts used to analyze structural variation in *Salicornia* genomes.
 
 
 ---
 
-## 🛠️ Installation
 
-To run the scripts and analyses for Whole_genome_triploidization_and_divergence_event_analysis and intra_family_transcriptomic_comparisons, clone the repository and install the required dependencies:
+## Contact & citation
 
-```bash
-git clone https://github.com/supermanwasd/Salicornia-genome.git
-cd Salicornia-genome
-pip install -r requirements.txt
+If you use these scripts or pipelines, please cite the manuscript that accompanies this repository (add the citation here once the paper is published).
+
+---
