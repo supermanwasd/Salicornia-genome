@@ -1,0 +1,1 @@
+perl EDTA.pl --genome genome.fa --cds genome.cds.fa --overwrite 1 --sensitive 1 --anno 1 --threads 10

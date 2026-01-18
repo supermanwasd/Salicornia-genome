@@ -1,0 +1,1 @@
+cafe5  --infile input.tab --tree input.tree --output_prefix  cafe_ortho  --cores 5

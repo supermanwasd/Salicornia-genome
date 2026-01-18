@@ -1,0 +1,1 @@
+busco -m geno -i genome.fasta -o viridiplantae_out -l /home/XXX/XX/
